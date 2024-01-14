@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container{
+  padding: 2vh 2vw;
+  border-radius: 1vw;
+  background: #ADF2A2;
+  height: 100%;
+  width: 100%;
   display: flex;
+  gap: 2vw;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: solid 0.5px #0d0d0d;
+  animation: Spaw 2s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes Spaw {
+  from{
+    opacity: 0;
+  } to {
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.Container > h1{
+  font-size: 2.5rem;
+}
+
+.Main{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+  padding: 2vh 2vw;
+}
+
+.ContainerInput{
+  display: flex;
+  gap: 1vw;
+  background: #ffffff;
+  padding: 1vh 1vw;
+  border-radius: 1vw;
+}
+
+.ContainerInput > input{
+  border: none;
+  padding: 0 2vw;
+  border-radius: 1vw;
+  outline: none;
+  font-weight: 700;
+  color: #0d0d0d;
+}
+
+.ContainerInput > input::placeholder{
+  font-weight: 700;
+  color: #0d0d0d;
+}
+
+.ContainerInput > input:focus{
+  outline: solid 1px #8c8c8c;
+}
+
+.ContainerInput > .ButtonSearch{
+  padding: 10px 11px;
+  border-radius: 100%;
+  border: none;
+  background: transparent;
+  color: #0d0d0d;
+  transition: all 1s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.ContainerInput > .ButtonSearch:hover{
+  color: #28D90D;
+}
+
+.Main > span{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Main > h2{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 620px) {
+  .Container{
+    border-radius: 2vh;
+  }
+
+  .ContainerInput{
+    border-radius: 2vh;
+  }
+
+  .ContainerInput > input{
+    margin: 0 0 0 1vw;
   }
 }
