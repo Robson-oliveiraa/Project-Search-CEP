@@ -47,7 +47,7 @@ export default function App() {
         <main class="Main">
           <h2>CPE: {cep.cep}</h2>
           <span>Rua: {cep.logradouro}</span>
-          <span>Complemeno: {cep.complemento}</span>
+          <span>Complemento: {cep.complemento}</span>
           <span>Bairro: {cep.bairro}</span>
           <span>Cidade/UF: {cep.localidade} - {cep.uf}</span>
         </main>
